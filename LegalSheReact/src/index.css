@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-legal-bg text-legal-text font-body overflow-x-hidden antialiased;
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+  }
+  
+  a {
+    @apply transition-all duration-300 ease-in-out;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-[16px] border border-white/10 rounded-stitch;
+  }
+  .gradient-text {
+    @apply bg-gradient-to-r from-legal-purpleLight to-legal-gold bg-clip-text text-transparent;
+  }
+}
