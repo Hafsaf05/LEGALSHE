@@ -3,7 +3,6 @@ const cors = require('cors');
 
 const app = express();
 const PORT = 5000;
-const OLLAMA_URL = 'http://localhost:11434/api/generate';
 
 // Default system prompt — used if none provided by frontend
 const DEFAULT_SYSTEM_PROMPT = `You are a legal assistant specialized in Indian law (BNS 2023 and IT Act).
