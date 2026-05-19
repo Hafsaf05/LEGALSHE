@@ -9,7 +9,7 @@ export const callAI = async (prompt, imageBase64 = null) => {
   }
 
   const client = new Groq({
-    apiKey: GROQ_API_KEY,
+    apiKey: import.meta.env.VITE_GROQ_API_KEY,
     dangerouslyAllowBrowser: true
   });
 
